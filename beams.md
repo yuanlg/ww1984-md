@@ -26,8 +26,10 @@ player.onChat("run", function () {
 })
 ```
 ```template
+player.onChat("run", function () {
     ww.moveWW(Direction.Forward, 3)
     ww.placeBlock(BeamsGlass.LimeStainedGlass, Direction.Right)
+})
 ```
 ```package
 minecraft-ww1984=github:yuanlg/ww1984-ts
