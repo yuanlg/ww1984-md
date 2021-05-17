@@ -8,13 +8,13 @@
 # Stealth Mission
 
 ## Step 1
-Help Wonder Woman move through the room without triggering the alarm by avoiding the lasers. She'll need to sneak behind and takedown the criminal.
+通过避开激光，帮助神奇女侠在房间里移动而不触发警报。她得偷偷溜到后面把罪犯抓起来.
 
-**Blocks Available:**  
-``||ww:Move <direction> by <number>||`` - Wonder Woman will move in that *direction* the given *number* of blocks.  
-``||ww:Turn <direction>||`` - Wonder Woman will turn in the given *direction*.  
-``||ww:Takedown criminal <direction>||`` - Stealthily knock out the criminal in the given *direction*.  
-``||loops:repeat <number> times||`` - Repeat code the given *number* of times.  
+**可用方块:**  
+``||ww:神奇女侠向 <方向> 移动 <几>||`` - 神奇女侠将按照方向移动设定的步数.  
+``||ww:神奇女侠向 <方向>转||`` - 神奇女侠将按照设定的方向转向.  
+``||ww:打倒罪犯 <方向>||`` - 向哪个*方向*偷偷地打倒罪犯.  
+``||loops:重复 <几> 次||`` - 重复设定的次数  
 
 ```ghost
 player.onChat("run", function () {
@@ -26,11 +26,9 @@ player.onChat("run", function () {
 })
 ```
 ```template
-player.onChat("run", function () {
     ww.moveWW(Direction.Forward, 1)
     ww.turnWW(LEFT_TURN)
-})
 ```
 ```package
-minecraft-ww1984=github:ReWrite-Media/ww1984-ts
+minecraft-ww1984=github:yuanlg/ww1984-ts
 ```
