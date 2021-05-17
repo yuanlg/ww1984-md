@@ -26,10 +26,8 @@ player.onChat("run", function () {
 })
 ```
 ```template
-player.onChat("run", function () {
     ww.moveWW(Direction.Forward, 1)
     ww.turnWW(RIGHT_TURN)
-})
 ```
 ```package
 minecraft-ww1984=github:yuanlg/ww1984-ts
