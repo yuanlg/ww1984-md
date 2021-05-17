@@ -10,15 +10,15 @@
 ## Step 1
 策划抢劫的小偷藏在人群中。帮助神奇的女人检查每个人，找出谁是小偷，然后抓住他得到最后的绘画作品。
 
-**Blocks Available:**  
-``||ww:Move <direction> by <number>||`` - Wonder Woman will move in that *direction* the given *number* of blocks.  
-``||ww:Turn <direction>||`` - Wonder Woman will turn in the given *direction*.  
-``||ww:attendee is the thief <direction>||`` - Return a boolean (*true* | *false*) of whether the attendee is the thief or not.  
-``||ww:Lasso thief <direction>||`` - Causes Wonder Woman to use her lasso of truth on the thief.  
-``||loops:repeat <number> times||`` - Repeat code the given *number* of times.  
-``||loops:while <boolean>||`` - Repeatedly run the code while the boolean is *true*.  
-``||logic:if / then||`` - Checks if a condition is *true* and then does something if it is.  
-``||logic:not <boolean>||`` - Switches the operation of a condition. Example: *while <true>* vs. *while not <true>*  
+**可用方块:**  
+``||ww:神奇女侠向 <方向> 移动 <几>||`` - 神奇女侠将按照方向移动设定的步数.  
+``||ww:神奇女侠向 <方向>转||`` - 神奇女侠将按照设定的方向转向.  
+``||ww:寻找小偷<方向>||`` - 返回一个布尔值（*true*|*false*），表示与会者是否是小偷.  
+``||ww:真言套索 <方向>||`` - 神奇女侠用她的真言套索对付小偷.  
+``||loops:重复 <几> 次||`` - 重复设定的次数.  
+``||loops:当条件为 <boolean>执行||`` - 一直重复，直到条件不满足. 
+``||logic:如果 / 否则||`` - 满足条件时就执行.  
+``||logic:非 <boolean>||`` - Switches the operation of a condition. Example: *while <true>* vs. *while not <true>*  
 
 ```ghost
 player.onChat("run", function () {
@@ -36,12 +36,10 @@ player.onChat("run", function () {
 })
 ```
 ```template
-player.onChat("run", function () {
     if (ww.locateGoon(Direction.Forward)) {
 
     }
-})
 ```
 ```package
-minecraft-ww1984=github:ReWrite-Media/ww1984-ts
+minecraft-ww1984=github:yuanlg/ww1984-ts
 ```
