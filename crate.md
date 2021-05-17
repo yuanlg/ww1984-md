@@ -8,17 +8,18 @@
 # Suspicious Crates
 
 ## Step 1
-帮助神奇女侠穿过板条箱，找到丢失的画块。搜索每一个盒子，如果她发现丢失的拼画，就让她打破盒子拿出画。
+帮助神奇女侠在箱子里找到丢失的那幅画。检查每一个箱子，如果她发现了丢失的画，让她打破箱子拿出画.
 
-**Blocks Available:**  
-``||ww:Move <direction> by <number>||`` - Wonder Woman will move in that *direction* the given *number* of blocks.  
-``||ww:Turn <direction>||`` - Wonder Woman will turn in the given *direction*.  
-``||ww:painting inside crate <direction>||`` - Return a boolean (*true* | *false*) of whether the painting is found hidden in the given *direction*.  
-``||ww:Break crate <direction>||`` - Instruct Wonder Woman to try and retrieve the hidden painting.  
-``||loops:repeat <number> times||`` - Repeat code the given *number* of times.  
-``||loops:while <boolean>||`` - Repeatedly run the code while the boolean is *true*.  
-``||logic:if / then||`` - Checks if a condition is *true* and then does something if it is.  
-``||logic:not <boolean>||`` - Switches the operation of a condition. Example: *while <true>* vs. *while not <true>*  
+**可用方块:**  
+``||ww:神奇女侠向 <方向> 移动 <几>||`` - 神奇女侠将按照方向移动设定的步数.  
+``||ww:神奇女侠向 <方向>转||`` - 神奇女侠将按照设定的方向转向.  
+``||ww:是否找到画 <direction>||`` - 返回一个布尔值(*true* | *false*)，表示绘画是否隐藏在给定的*方向*中。.  
+``||ww:打破箱子 <direction>||`` - 让神奇女侠打破箱子寻找画作.  
+``||loops:重复 <几> 次||`` - 重复设定的次数.  
+``||loops:当条件为 <boolean>执行||`` - 一直重复，直到条件不满足. 
+``||logic:如果 / 否则||`` - 满足条件时就执行.  
+``||logic:非 <boolean>||`` - Switches the operation of a condition. Example: *while <true>* vs. *while not <true>*  
+
 
 ```ghost
 player.onChat("run", function () {
@@ -36,12 +37,10 @@ player.onChat("run", function () {
 })
 ```
 ```template
-player.onChat("run", function () {
     if (ww.locatePainting(Direction.Forward)) {
 
     }
-})
 ```
 ```package
-minecraft-ww1984=github:ReWrite-Media/ww1984-ts
+minecraft-ww1984=github:yuanlg/ww1984-ts
 ```
