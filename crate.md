@@ -37,9 +37,11 @@ player.onChat("run", function () {
 })
 ```
 ```template
+player.onChat("run", function () {
     if (ww.locatePainting(Direction.Forward)) {
 
     }
+})
 ```
 ```package
 minecraft-ww1984=github:yuanlg/ww1984-ts
