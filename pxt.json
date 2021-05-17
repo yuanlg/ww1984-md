@@ -1,0 +1,21 @@
+{
+    "name": "minecraft-ww1984",
+    "version": "2.13.0",
+    "dependencies": {
+        "core": "*",
+        "builder": "*"
+    },
+    "files": [
+        "README.md",
+        "crate.md",
+        "beams.md",
+        "floor.md",
+        "sneak.md",
+        "final.md"
+
+    ],
+    "supportedTargets": [
+        "minecraft"
+    ],
+    "preferredEditor": "tsprj"
+}
