@@ -5,16 +5,20 @@
 ### @hideIteration true
 ### @explicitHints 1
 
-# Dance Floor
+# Hidden in Plain Sight
 
 ## Step 1
-墙上的颜色似乎和地板上的颜色相同。帮助神奇女侠按照墙上的方块颜色顺序在地板上移动。这将会打开墙上的一扇暗门。
+策划抢劫的小偷藏在人群中。帮助神奇的女人检查每个人，找出谁是小偷，然后抓住他得到最后的绘画作品。
 
-**可用的方块:**  
+**可用方块:**  
 ``||ww:神奇女侠向 <方向> 移动 <几>||`` - 神奇女侠将按照方向移动设定的步数.  
 ``||ww:神奇女侠向 <方向>转||`` - 神奇女侠将按照设定的方向转向.  
-``||loops:重复 <几> 次||`` - 重复设定的次数  
-
+``||ww:寻找小偷<方向>||`` - 返回一个布尔值（*true*|*false*），表示与会者是否是小偷.  
+``||ww:真言套索 <方向>||`` - 神奇女侠用她的真言套索对付小偷.  
+``||loops:重复 <几> 次||`` - 重复设定的次数.  
+``||loops:当条件为 <boolean>执行||`` - 一直重复，直到条件不满足. 
+``||logic:如果 / 否则||`` - 满足条件时就执行.  
+``||logic:非 <boolean>||`` - Switches the operation of a condition. Example: *while <true>* vs. *while not <true>*  
 
 ```ghost
 player.onChat("run", function () {
@@ -23,13 +27,18 @@ player.onChat("run", function () {
     for (let index = 0; index < 4; index++) {
         
     }
+    if (ww.locateGoon(Direction.Forward)) {
+        ww.apprehendGoon(Direction.Forward)
+    }
+    while (!(false)) {
+        
+    }	
 })
 ```
 ```template
-player.onChat("run", function () {
-    ww.moveWW(Direction.Forward, 1)
-    ww.turnWW(RIGHT_TURN)
-})
+    if (ww.locateGoon(Direction.Forward)) {
+
+    }
 ```
 ```package
 minecraft-ww1984=github:yuanlg/ww1984-ts
