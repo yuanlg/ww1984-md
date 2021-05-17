@@ -8,13 +8,13 @@
 # Beams of Color
 
 ## Step 1
-Help Wonder Woman place stained glass on top of the beams of light to match the color pattern shown on the wall. You'll need to tell her where to move and which colors to place. 
+帮助神奇女侠将彩色玻璃放在光束上方，以匹配墙上显示的颜色图案。你需要告诉她移动到哪里，用什么颜色. 
 
-**Blocks Available:**  
-``||ww:Move <direction> by <number>||`` - Wonder Woman will move in that direction the specified number of blocks.  
-``||ww:Turn <direction>||`` - Wonder Woman will turn in the specified direction.  
-``||ww:Place <color> Stained Glass <direction>||`` - Place a piece of colored stained glass in the specified direction.  
-``||loops:repeat <number> times||`` - Repeat code the specified number of times.  
+**可用方块:**  
+``||ww:神奇女侠向 <方向> 移动 <几>||`` - 神奇女侠将按照方向移动设定的步数.  
+``||ww:神奇女侠向 <方向>转||`` - 神奇女侠将按照设定的方向转向.  
+``||ww:放置 <颜色> 彩色玻璃 <方向>||`` - 按指定方向放置一块彩色彩色玻璃.  
+``||loops:重复 <几> 次||`` - 重复设定的次数.  
 
 ```ghost
 player.onChat("run", function () {
@@ -26,11 +26,9 @@ player.onChat("run", function () {
 })
 ```
 ```template
-player.onChat("run", function () {
     ww.moveWW(Direction.Forward, 3)
     ww.placeBlock(BeamsGlass.LimeStainedGlass, Direction.Right)
-})
 ```
 ```package
-minecraft-ww1984=github:ReWrite-Media/ww1984-ts
+minecraft-ww1984=github:yuanlg/ww1984-ts
 ```
