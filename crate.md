@@ -8,7 +8,7 @@
 # Suspicious Crates
 
 ## Step 1
-Help Wonder Woman move through the crates and find the missing painting piece. Search each one and if she finds the missing puzzle piece, have her break the box to get it.
+帮助神奇女侠穿过板条箱，找到丢失的画块。搜索每一个盒子，如果她发现丢失的拼画，就让她打破盒子拿出画。
 
 **Blocks Available:**  
 ``||ww:Move <direction> by <number>||`` - Wonder Woman will move in that *direction* the given *number* of blocks.  
