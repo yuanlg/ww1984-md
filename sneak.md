@@ -5,7 +5,7 @@
 ### @hideIteration true
 ### @explicitHints 1
 
-# Stealth Mission
+# 隐身任务
 
 ## Step 1
 通过避开激光，帮助神奇女侠在房间里移动而不触发警报。她得偷偷溜到后面把罪犯抓起来.
