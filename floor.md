@@ -5,7 +5,7 @@
 ### @hideIteration true
 ### @explicitHints 1
 
-# Dance Floor
+# 舞池
 
 ## Step 1
 墙上的颜色似乎和地板上的颜色相同。帮助神奇女侠按照墙上的方块颜色顺序在地板上移动。这将会打开墙上的一扇暗门。
