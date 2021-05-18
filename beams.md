@@ -5,7 +5,7 @@
 ### @hideIteration true 
 ### @explicitHints 1
 
-# Beams of Color
+# 彩色光束
 
 ## Step 1
 帮助神奇女侠将彩色玻璃放在光束上方，以匹配墙上显示的颜色图案。你需要告诉她移动到哪里，用什么颜色. 
