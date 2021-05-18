@@ -1,6 +1,6 @@
 {
     "name": "minecraft-ww1984",
-    "version": "0.6",
+    "version": "1.1.1",
     "dependencies": {
         "core": "*",
         "builder": "*"
