@@ -5,7 +5,7 @@
 ### @hideIteration true 
 ### @explicitHints 1
 
-# Suspicious Crates
+# 可疑的箱子
 
 ## Step 1
 帮助神奇女侠在箱子里找到丢失的那幅画。检查每一个箱子，如果她发现了丢失的画，让她打破箱子拿出画.
