@@ -5,7 +5,7 @@
 ### @hideIteration true
 ### @explicitHints 1
 
-# Hidden in Plain Sight
+# 隐藏在明处
 
 ## Step 1
 策划抢劫的小偷藏在人群中。帮助神奇的女人检查每个人，找出谁是小偷，然后抓住他得到最后的绘画作品。
