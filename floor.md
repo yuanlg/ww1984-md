@@ -32,5 +32,5 @@ player.onChat("run", function () {
 })
 ```
 ```package
-minecraft-ww1984=github:yuanlg/ww1984-ts
+
 ```
