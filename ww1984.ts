@@ -14,8 +14,8 @@ enum BeamsGlass {
     //% blockIdentity="blocks.block" enumval=262385 block="黄色 彩色玻璃"
     //% jres alias=黄色_彩色玻璃
     YellowStainedGlass = 262385,
-    //% blockIdentity="blocks.block" enumval=327921 block="灰色 彩色玻璃"
-    //% jres alias=灰色_彩色玻璃
+    //% blockIdentity="blocks.block" enumval=327921 block="绿色 彩色玻璃"
+    //% jres alias=绿色_彩色玻璃
     LimeStainedGlass = 327921,
     //% blockIdentity="blocks.block" enumval=721137 block="蓝色 彩色玻璃"
     //% jres alias=蓝色_彩色玻璃
